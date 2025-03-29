@@ -3,6 +3,7 @@ import { LandingPage } from './pages/LandingPage'
 import ReactSlidingPane from 'react-sliding-pane'
 import ContactUs from './pages/ContactUs/index.tsx'
 import { useState } from 'react'
+import Menu from '../public/assets/Menu.svg'
 function App() {
 
   const [state,setState] = useState({
@@ -16,12 +17,11 @@ console.log(state?.isPanelOpen)
   return (
     <>
         <div onClick={() => setShowContactUs(true)} className={`menu ${showContactUs?'hidden':''}`}>
-            <img src='/src/assets/Menu.svg' alt="Menu"/>
+            <img src={Menu} alt="Menu"/>
         </div>
         <button className={`contactUsButton ${showContactUs ? "visible" : ""}`} onClick={clicker}>
             Contact us
         </button>
-    {/* {showButton ? <button className={`contactUsButton ${showButton ? "visible" : ""}`} onClick={clicker}>Contact us</button>:<div onClick={()=>setShowButton(true)} className='menu'><img src ='/src/assets/Menu.svg'/></div>} */}
     
     
       <LandingPage/>

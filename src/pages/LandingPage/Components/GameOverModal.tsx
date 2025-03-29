@@ -41,7 +41,7 @@ export const GameOverModal = ({state,setState}:GameOverModalProps)=>{
                         </div>
                         <div className="gameOverModal__content__result">
                             <div className="gameOverModal__content__result__skull">
-                                <img src='/src/assets/skull-svgrepo-com.svg'/>
+                                <img src='/public/assets/skull-svgrepo-com.svg'/>
                             </div>
                             <div className="gameOverModal__content__result__text">
                                 <div className="gameOverModal__content__result__text__top">TRY AGAIN</div>

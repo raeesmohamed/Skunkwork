@@ -155,7 +155,7 @@ html,body{
     width: 20px;
     padding: 0;
     /* svg{ */
-    background-image: url('./assets/skull-svgrepo-com.svg') !important;
+    background-image: url('/public/assets/skull-svgrepo-com.svg') !important;
 
     /* } */
   /* } */

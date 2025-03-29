@@ -1,8 +1,8 @@
 import {useRef, useState} from 'react'
 import './index.scss'
-import ArrowIcon from '../../assets/Select arrow.svg'
-import CloseIcon from '../../assets/Close.svg'
-import Logo from '../../assets/SkynkworkLogo.png'
+import ArrowIcon from '../../../public/assets/Selectarrow.svg'
+import CloseIcon from '../../../public/assets/Close.svg'
+import Logo from '../../../public/assets/SkynkworkLogo.png'
 import { sendEmail } from './Components/Email'
 
 const ContactUs = ({closePanel}:any)=>{

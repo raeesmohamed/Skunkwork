@@ -6,7 +6,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    cursor: url('/src/assets/crosshair.ico'), auto;
+    cursor: url('/public/assets/crosshair.ico'), auto;
 
     .box {
         display: flex;
@@ -30,14 +30,14 @@
                 position: absolute;
                 width: 150px;
                 height: 150px;
-                cursor: url('/src/assets/crosshair.ico'), auto;
+                cursor: url('/public/assets/crosshair.ico'), auto;
             }
             @media (max-width:500px){
                 .movingImg {
                     position: absolute;
                     width: 100px;
                     height: 100px;
-                    cursor: url('/src/assets/crosshair.ico'), auto;
+                    cursor: url('/public/assets/crosshair.ico'), auto;
                 }
             }
         }

@@ -195,8 +195,8 @@ export const Game = ({ state, setState }: GameProps) => {
     const activeImages = imagePaths
     const containerRef = useRef<HTMLDivElement | null>(null);
     const moversRef = useRef<Map<number, RandomObjectMover>>(new Map());
-    const audio = new Audio('/src/assets/Shoot.wav')
-    const backgroundAudio = new Audio('/src/assets/backgroundSong.mp3')
+    const audio = new Audio('/public/assets/Shoot.wav')
+    const backgroundAudio = new Audio('/public/assets/backgroundSong.mp3')
     useEffect(() => {
 
         if (!state?.gamepopupOpen) return;
