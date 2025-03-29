@@ -192,7 +192,7 @@ class RandomObjectMover {
 //     }
 // }
 export const Game = ({ state, setState }: GameProps) => {
-    const [activeImages, setActiveImages] = useState(imagePaths);
+    const activeImages = imagePaths
     const containerRef = useRef<HTMLDivElement | null>(null);
     const moversRef = useRef<Map<number, RandomObjectMover>>(new Map());
     const audio = new Audio('/src/assets/Shoot.wav')
