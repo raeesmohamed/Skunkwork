@@ -1,0 +1,330 @@
+.contactUs{
+    background-color: black;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+
+    color: white;
+    &__logo{
+        position: fixed;
+        margin-top: 10px;
+        margin-left: 5px;
+        img{
+            height: 100px;
+            width: 125px;
+        }
+    }
+    &__goBack{
+        position: fixed;   
+        top: 40px;
+        right: 100px;
+        border-radius: 6px;
+        cursor: pointer;
+        img{
+            height: 40px;
+            width: 30px;  
+            margin-right: 5px;   
+        }
+    }
+    &__content{
+
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin-left: 20%;
+        padding-top: 130px;
+        // margin-top: 140px;
+        &__container{
+            width: 100%;
+            font-size: 60px;
+            &__iAm{
+                display:flex;
+                margin-bottom: 75px;
+                &__input{
+                    width: 85%;
+                    input{
+                        width: 80%;
+                        margin-left: 50px;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        background-color: black;
+                        font-size: 24px;
+                        color: white;
+                    }
+                    input:hover{
+                        border-color: gray;
+                    }
+                    input:focus{
+                        border-bottom: 1px solid grey;
+                        outline: none;
+                        border-color: white;
+                        color: white;
+                        background-color: black;
+                        padding: none;
+                    }
+                }
+
+            }
+            &__lookingFor{
+                display:flex;
+                margin-bottom: 75px;
+                &__title{
+                }
+                &__button{
+                    color: #FFEC01;
+                    cursor: pointer;
+                    margin-left: 50px;
+                }
+                &__popup{
+                    // position: absolute;
+                    border: 1px solid grey;
+                    padding: 30px;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &__job{
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                    }
+                    &__freelance{
+                        cursor: pointer;
+                    }
+                    &__job.selected,&__freelance.selected{
+                        color: #FFEC01;
+                    }
+                }
+                &__content{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 15px;
+                    margin-left: 16px;
+                    img{
+                        height: 20px;
+                        width: 20px;  
+                        margin-right: 5px;                      
+                    }
+                    &__title{
+                        font-size: 20px;
+                        color: grey;
+                    }
+                }
+            }
+            &__myPortfolio{
+                display:flex;
+                margin-bottom: 100px;
+
+                &__input{
+                    width: 60%;
+                    input{
+                        width: 80%;
+                        margin-left: 50px;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        background-color: black;
+                        font-size: 24px;
+                        color: white;
+                    }
+                    input:hover{
+                        border-color: gray;
+                    }
+                    input:focus{
+                        border-bottom: 1px solid grey;
+                        outline: none;
+                        border-color: white;
+                        color: white;
+                        background-color: black;
+                        padding: none;
+                    }
+                }
+            }
+            .submtButton{
+                outline: none;
+                border: none;
+                background-color: white;
+              
+                top: 40px;
+                right: 100px;
+                padding: 10px 16px;
+                font-size: 25px;
+                font-family: "Fraunces", serif;
+                font-weight: 500;
+                font-style: italic;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+
+    }
+    &__email{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 25px;
+        font-size: 8vw;
+
+    }
+    @media (max-width:500px){
+        &__goBack{
+            top: 40px;
+            right: 40px;
+            img{
+                height: 50px;
+                width: 50px;  
+                margin-right: 5px;   
+            }
+        }
+        &__content{
+            margin-left: 5%;
+            padding-top: 150px;
+            &__container{
+                width: 100%;
+                font-size: 20px;
+                &__iAm{
+                    display:flex;
+                    margin-bottom: 25px;
+                    &__title{
+                        width: 29%;
+                    }
+                    &__input{
+                        width: 60%;
+                        input{
+                            width: 90%;
+                            margin-left: 25px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            background-color: black;
+                            font-size: 16px;
+                            color: white;
+                        }
+                        input:hover{
+                            border-color: gray;
+                        }
+                        input:focus{
+                            border-bottom: 1px solid grey;
+                            outline: none;
+                            border-color: white;
+                            color: white;
+                            background-color: black;
+                            padding: none;
+                        }
+                    }
+    
+                }
+                &__lookingFor{
+                    display:flex;
+                    margin-bottom: 15px;
+                    width: 95%;
+                    &__title{
+                        width: 45%;
+                    }
+                    &__button{
+                        color: #FFEC01;
+                        cursor: pointer;
+                        margin-left: 25px;
+                        width: 30%;
+                        // width: 300px;
+                    }
+                    &__popup{
+                        // position: absolute;
+                        border: 1px solid grey;
+                        padding: 30px;
+                        font-size: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        &__job{
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                        }
+                        &__freelance{
+                            cursor: pointer;
+                        }
+                        &__job.selected,&__freelance.selected{
+                            color: #FFEC01;
+                        }
+                    }
+                    &__content{
+                        display: flex;
+                        align-items: flex-end;
+                        margin-bottom: 15px;
+                        margin-left: 16px;
+                        margin-top: 10px;
+                        img{
+                            height: 20px;
+                            width: 20px;  
+                            margin-right: 5px;                      
+                        }
+                        &__title{
+                            font-size: 16px;
+                            color: grey;
+                        }
+                    }
+                }
+                &__myPortfolio{
+                    display:flex;
+                    margin-bottom: 25px;
+    
+                    &__input{
+                        width: 60%;
+                        input{
+                            width: 87%;
+                            margin-left: 25px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            background-color: black;
+                            font-size: 16px;
+                            color: white;
+                        }
+                        input:hover{
+                            border-color: gray;
+                        }
+                        input:focus{
+                            border-bottom: 1px solid grey;
+                            outline: none;
+                            border-color: white;
+                            color: white;
+                            background-color: black;
+                            padding: none;
+                        }
+                    }
+                }
+                .submtButton{
+                    outline: none;
+                    border: none;
+                    background-color: white;
+                    color: black;
+                    top: 40px;
+                    right: 100px;
+                    padding: 10px 16px;
+                    font-size: 16px;
+                    font-family: "Fraunces", serif;
+                    font-weight: 500;
+                    font-style: italic;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+        &__email{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            bottom: 25px;
+            // left: 15%;
+            font-size: 7vw;
+    
+        }
+    }
+}
